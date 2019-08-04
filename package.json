@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "classnames": "^2.1.2",
+    "global": "^4.4.0",
     "react-swipeable-views": "^0.12.8"
   },
   "devDependencies": {

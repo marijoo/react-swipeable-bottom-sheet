@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import window from 'global';
 
 class HeightUpdater extends Component {
 	constructor(props){
@@ -17,11 +18,13 @@ class HeightUpdater extends Component {
 	}
 
 	componentWillMount(){
-		window.addEventListener('resize', this.onWindowResize);
+        if (window)
+		      window.addEventListener('resize', this.onWindowResize);
 	}
 
 	componentWillUnmount(){
-		window.removeEventListener('resize', this.onWindowResize);
+        if (window)
+    		window.removeEventListener('resize', this.onWindowResize);
 	}
 
 	render(){

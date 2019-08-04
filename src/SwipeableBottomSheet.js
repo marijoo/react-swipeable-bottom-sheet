@@ -5,6 +5,7 @@ import SwipeableViews from 'react-swipeable-views';
 import HeightUpdater from './HeightUpdater';
 import ScrollToTop from './ScrollToTop';
 
+import window from 'global';
 
 class SwipeableBottomSheet extends Component {
 
