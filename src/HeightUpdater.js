@@ -18,12 +18,12 @@ class HeightUpdater extends Component {
 	}
 
 	componentWillMount(){
-        if (window)
+        if (window.addEventListener)
 		      window.addEventListener('resize', this.onWindowResize);
 	}
 
 	componentWillUnmount(){
-        if (window)
+        if (window.removeEventListener)
     		window.removeEventListener('resize', this.onWindowResize);
 	}
 
